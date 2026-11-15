@@ -127,4 +127,3 @@ bgButton.style.padding = "12px 25px";
 bgButton.style.border = "none";
 bgButton.style.borderRadius = "12px";
 bgButton.style.cursor = "pointer";
-document.body.style.fontSize = "40px";

@@ -1,22 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Nikolas</title>
-    </head>
-    <body>
-        <h1>Nama: Nikolas Mahardika</h1>
-        <h2>Foto:</h2><img src="../gambar/nikolas.webp" width="256" height="256"/>
-        <h2>Hobi:</h2>
-        <ul>
-            <li>Main game</li>
-            <li>Baca manhwa</li>
-        </ul>
-        <h2>Keahlian:</h2>
-        <ul>
-            <li>Adobe Lightroom</li>
-            <li>Graph Modelling</li>
-            <li>Object Oriented Programming</li>
-        </ul>
-        <h2>Aktivitas Terakhir: Bermain Minecarft</h2>
-        <div class="tenor-gif-embed" data-postid="11868430735839446738" data-share-method="host" data-aspect-ratio="1" data-width="256px"><a href="https://tenor.com/view/mugimeshi323-komugi-komugikomarucocoa-%D0%BA%D0%BE%D0%BC%D0%B0%D1%80%D1%83-cat-minecraft-gif-11868430735839446738"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    </body>
+	<head>
+		<title>Nikolas</title>
+		<style>
+		.tenor-gif-embed {
+			pointer-events: none;
+		}
+		#overlay {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.7);
+			z-index: 2;
+			justify-content: center;
+			align-items: center;
+		}
+		button {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			font-size: large;
+		}
+		.blok {
+			position: fixed;
+			width: 16px;
+			height: 16px;
+			background: #5cb85c;
+			border: 2px solid #3d7a3d;
+			pointer-events: none;
+			z-index: 0;
+			animation: hilang 0.5s forwards;
+		}
+		@keyframes hilang {
+			0% {
+				background: #5cb85c;
+				border-color: #3d7a3d;
+				opacity: 1;
+				transform: scale(1) rotate(0deg);
+			}
+			60% {
+				background: #8b5a2b;
+				border-color: #5a3a1a;
+				opacity: 1;
+			}
+			100% {
+				background: #6b4423;
+				border-color: #3d2a14;
+				opacity: 0;
+				transform: scale(0.2) rotate(90deg);
+			}
+		}
+		</style>
+		<script type="text/javascript" src="../js/nikolas.js" defer></script>
+	</head>
+	<body>
+		<h1>Nama: Nikolas Mahardika</h1>
+		<h2>Foto:</h2><img src="../gambar/nikolas.webp" width="256" height="256"/>
+		<h2>Hobi:</h2>
+		<ul>
+			<li>Main game</li>
+			<li>Baca manhwa</li>
+		</ul>
+		<h2>Keahlian:</h2>
+		<ul>
+			<li>Adobe Lightroom</li>
+			<li>Graph Modelling</li>
+			<li>Object Oriented Programming</li>
+		</ul>
+		<h2>Aktivitas Terakhir: Bermain Minecarft</h2>
+		<div class="tenor-gif-embed" data-postid="11868430735839446738" data-share-method="host" data-aspect-ratio="1" data-width="256px"><a href="https://tenor.com/view/mugimeshi323-komugi-komugikomarucocoa-%D0%BA%D0%BE%D0%BC%D0%B0%D1%80%D1%83-cat-minecraft-gif-11868430735839446738"></a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+		<button id="hmm">Tombol apa ya?</button>
+		<div id="overlay">
+			<img id="surprise" src="../gambar/YubinScare.gif"/>
+		</div>
+	</body>
 </html>

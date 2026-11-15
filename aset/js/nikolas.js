@@ -1,14 +1,14 @@
 const tombol = document.getElementById("hmm");
-const gambar = document.getElementById("surprise");
+const overlay = document.getElementById("overlay");
 
 // Klik tombol -> munculkan gambar
 tombol.addEventListener("click", () => {
-    gambar.style.display = "block";
+    overlay.style.display = "flex";
 });
 
 // Klik gambar -> tutup lagi
-gambar.addEventListener("click", () => {
-    gambar.style.display = "none";
+overlay.addEventListener("click", () => {
+    overlay.style.display = "none";
 });
 
 document.addEventListener("mousemove", (e) => {
